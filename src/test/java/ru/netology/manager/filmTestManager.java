@@ -105,6 +105,6 @@ public class filmTestManager {
         manager.add(n1);
         manager.add(n2);
         manager.removeAllFilm();
-        assertArrayEquals(0,manager.removeAllFilm());
+        assertArrayEquals(new FIlm[0],manager.recentFilms());
     }
 }
