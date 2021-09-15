@@ -32,6 +32,7 @@ class FIlmTest {
         assertEquals(false, film.isPremiereTomorrow());
         film.setProductName("Name");
         assertEquals("Name",film.getProductName());
+
     }
 
 }
