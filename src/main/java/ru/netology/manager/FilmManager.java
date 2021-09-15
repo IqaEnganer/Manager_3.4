@@ -7,7 +7,6 @@ public class FilmManager {
     private FIlm[] films = new FIlm[0];
 
 
-
     private int numberDisplayedFilms = 10;
 
     public FilmManager(int numberDisplayedFilms) {
@@ -16,6 +15,7 @@ public class FilmManager {
 
     public FilmManager() {
     }
+
     public int getNumberDisplayedFilms() {
         return numberDisplayedFilms;
     }
@@ -34,17 +34,17 @@ public class FilmManager {
 
     // Удаление фильма
 
-//    public void removeFilm(FIlm Film) {
-//        FIlm[] tmp = new FIlm[films.length - 1];
-//        int index = 0;
-//        for (FIlm fIlm : films) {
-//            if (!fIlm.equals(Film)) {
-//                tmp[index] = fIlm;
-//                index++;
-//            }
-//        }
-//        films = tmp;
-//    }
+/*   public void removeFilm(FIlm Film) {
+       FIlm[] tmp = new FIlm[films.length - 1];
+       int index = 0;
+       for (FIlm fIlm : films) {
+           if (!fIlm.equals(Film)) {
+               tmp[index] = fIlm;
+               index++;
+           }
+       }
+       films = tmp;
+  }*/
 
     public void removeFilm(int id) {
         int length = films.length - 1;
@@ -87,14 +87,15 @@ public class FilmManager {
             resultLength = numberDisplayedFilms;
         }
         FIlm[] tmp = new FIlm[resultLength];
-        for (int i = films.length - resultLength; i < films.length;i++) {
-            int index = films.length - i + (films.length - resultLength -1);
-            tmp[i-(films.length-resultLength)] = films[index];
+        for (int i = films.length - resultLength; i < films.length; i++) {
+            int index = films.length - i + (films.length - resultLength - 1);
+            tmp[i - (films.length - resultLength)] = films[index];
         }
         return tmp;
     }
+
     // Удаление всех фильмов
-    public void removeAllFilm(){
+    public void removeAllFilm() {
         FIlm[] film = new FIlm[0];
         films = film;
     }
