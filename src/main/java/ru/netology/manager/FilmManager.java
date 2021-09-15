@@ -59,14 +59,14 @@ public class FilmManager {
         films = tmp;
     }
 
-//   Показать все фильмы
-//  public FIlm[] getAllFilms() {
-//      FIlm[] tmp = new FIlm[films.length];
-//      for (int i = 0; i < films.length; i++) {
-//          tmp[i] = films[i];
-//      }
-//      return tmp;
-//  }
+/*   Показать все фильмы
+  public FIlm[] getAllFilms() {
+      FIlm[] tmp = new FIlm[films.length];
+      for (int i = 0; i < films.length; i++) {
+          tmp[i] = films[i];
+      }
+      return tmp;
+  }*/
 
     //Показать все фильмы в обратном порядке
     public FIlm[] getAllFilmsReverseOrder() {
